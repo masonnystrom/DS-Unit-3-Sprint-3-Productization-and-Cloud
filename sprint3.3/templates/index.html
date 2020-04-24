@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <h1>Smog Level</h1>
+    {% if smog_level %}
+        <ul>
+        {% for smog in smog_level %}
+            <li>{{ smog }}</li>
+        {% endfor %}
+        </ul>
+        
+    {% else %}
+        <p>Smog not found.</p>
+    {% endif %}
+</html>
+</head>
+<body>
+    
+</body>
+</html>
